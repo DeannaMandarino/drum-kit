@@ -1,36 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100vh;
   margin: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-image: url('/images/colorful concert.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-.keys {
-  width: 100%;
-  height: 100vh;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.45rem;
+}
+
 .key {
   display: flex;
   flex-direction: column;
-  margin: 10px;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
-  width: 6.5%;
-  height: 60px;
+  width: 8.8rem;
+  height: 12rem;
+  border: 4px solid black;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 button {
   border: none;
   background-color: transparent;
   color: white;
+  font-size: 2rem;
 }
 span {
   text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+  color: rgb(95, 244, 255);
 }
