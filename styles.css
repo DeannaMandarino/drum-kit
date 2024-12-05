@@ -1,0 +1,36 @@
+html, body {
+  height: 100vh;
+  margin: 0;
+}
+body {
+  background-image: url('/images/colorful concert.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.keys {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.key {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 6.5%;
+  height: 60px;
+  color: white;
+}
+button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+span {
+  text-transform: uppercase;
+}
