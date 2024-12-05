@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-image: url('/images/colorful concert.avif');
+  background-image: url('/images/colorful-concert.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,15 +44,39 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
+
 button {
   border: none;
   background-color: transparent;
   color: white;
   font-size: 2rem;
 }
+
 span {
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 5px;
   color: rgb(95, 244, 255);
+}
+
+@media (min-width: 876px) {
+  .keys {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .keys {
+    width: 99%;
+    gap: 3%;
+  }
+  .key {
+    width: 8%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .key {
+    height: 20rem;
+  }
 }
