@@ -7,70 +7,80 @@
   <meta name="description" content="Play different drum sounds with your keyboard or mouse in this interactive, responsive drum kit web app. Fun for music lovers and beginners!">
   <meta name="author" content="Deanna Mandarino">
 
-  <!-- External stylesheet link -->
+  <!-- Link to external CSS stylesheet -->
   <link rel="stylesheet" href="styles.css">
 
+  <!-- Preconnect to improve font loading performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Link to Google Fonts (Poppins)-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- Page title for browser tab -->
-  <title>Drum Kit</title>
+  <title>Interactive Drum Kit | Play Sounds with Keyboard or by Clicking</title>
 </head>
 <body>
   <div class="keys">
+    <!-- Keys for each drum sound -->
     <div id="a" class="key">
-      <button>A</button>
+      <button aria-label="Play Clap Sound">A</button>
       <span class="sound">clap</span>
     </div>
 
     <div id="s" class="key">
-      <button>S</button>
+      <button aria-label="Play Hihat Sound">S</button>
       <span class="sound">hihat</span>
     </div>
     
     <div id="d" class="key">
-      <button>D</button>
+      <button aria-label="Play Kick Sound">D</button>
       <span class="sound">kick</span>
     </div>
 
     <div id="f" class="key">
-      <button>F</button>
+      <button aria-label="Play Openhat Sound">F</button>
       <span class="sound">openhat</span>
     </div>
 
     <div id="g" class="key">
-      <button>G</button>
+      <button aria-label="Play Boom Sound">G</button>
       <span class="sound">boom</span>
     </div>
     
     <div id="h" class="key">
-      <button>H</button>
+      <button aria-label="Play Ride Sound">H</button>
       <span class="sound">ride</span>
     </div>
 
     <div id="j" class="key">
-      <button>J</button>
+      <button aria-label="Play Snare Sound">J</button>
       <span class="sound">snare</span>
     </div>
     
     <div id="k" class="key">
-      <button>K</button>
+      <button aria-label="Play Tom Sound">K</button>
       <span class="sound">tom</span>
     </div>
     
     <div id="l" class="key">
-      <button>L</button>
+      <button aria-label="Play Tink Sound">L</button>
       <span class="sound">tink</span>
     </div>
   </div>
 
-  <audio id="sound-a" src="sounds/clap.wav"></audio>
-  <audio id="sound-s" src="sounds/hihat.wav"></audio>
-  <audio id="sound-d" src="sounds/kick.wav"></audio>
-  <audio id="sound-f" src="sounds/openhat.wav"></audio>
-  <audio id="sound-g" src="sounds/boom.wav"></audio>
-  <audio id="sound-h" src="sounds/ride.wav"></audio>
-  <audio id="sound-j" src="sounds/snare.wav"></audio>
-  <audio id="sound-k" src="sounds/tom.wav"></audio>
-  <audio id="sound-l" src="sounds/tink.wav"></audio>
+  <!-- Audio elements with unique IDs for each sound -->
+  <audio id="sound-a" src="sounds/clap.wav" preload="auto"></audio>
+  <audio id="sound-s" src="sounds/hihat.wav" preload="auto"></audio>
+  <audio id="sound-d" src="sounds/kick.wav" preload="auto"></audio>
+  <audio id="sound-f" src="sounds/openhat.wav" preload="auto"></audio>
+  <audio id="sound-g" src="sounds/boom.wav" preload="auto"></audio>
+  <audio id="sound-h" src="sounds/ride.wav" preload="auto"></audio>
+  <audio id="sound-j" src="sounds/snare.wav" preload="auto"></audio>
+  <audio id="sound-k" src="sounds/tom.wav" preload="auto"></audio>
+  <audio id="sound-l" src="sounds/tink.wav" preload="auto"></audio>
 
-  <script src="script.js"></script>
+  <!-- External JavaScript file linked with defer to improve page load -->
+  <script src="script.js" defer></script>
 </body>
 </html>
