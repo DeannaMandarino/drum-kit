@@ -15,7 +15,7 @@ This project provides an interactive drum kit where users can play different dru
 - Sound effects triggered by both keyboard keys and mouse clicks.
 - Reusable and efficient JavaScript code for adding functionality to the keys.
 
-![Drum Kit Screenshot](drum-kit-screenshot.png)
+![Drum Kit Screenshot](screenshot/drum-kit-screenshot.png)
 
 ## Technologies Used
 
