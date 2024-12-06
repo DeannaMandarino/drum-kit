@@ -1,7 +1,21 @@
 function playSound(event) {
+  let key = event.target.closest('.key') ? event.target.closest('.key').getAttribute('id') : null;
+  /*
   const keyElement = event.target.closest('.key'); // Get the closest parent key element
   const key = keyElement ? keyElement.getAttribute('id') : null;
   const audio = document.querySelector(`#sound-${key}`);
+  */
+
+  if (!key) {
+    key = event.key ? event.key.toLowerCase() : null;
+  }
+
+  if (!key) {
+    return;
+  }
+
+  const audio = document.querySelector(`#sound-${key}`);
+  const keyElement = document.querySelector(`#${key}`);
 
   if (!audio) {
     return; //stops function from running
